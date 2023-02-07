@@ -25,6 +25,10 @@ app.use("/api/menu/items", itemRouter);
  * Server Activation
  */
 
+app.get("/", (req, res) => {
+    res.send('Express on Vercel')
+})
+
 
 
 app.listen(PORT, () => {
